@@ -1,0 +1,39 @@
+/* .carrito{
+    font-size: 20px;
+}
+
+.form{
+    margin-left: 200px;
+}
+
+.cuenta_carrito{
+    margin-left: 170px;
+    
+} */
+/* ///////////// */
+/* .navbar{
+    background-color: #87C0CD;
+} */
+
+/* .buscador{
+
+}
+  */
+
+
+  /* /////////// */
+
+/* .fondoCarrito{
+    background-color: #F3F9FB;
+    border-radius: 10px;
+    border: 1px solid black;
+} 
+
+.categorias{
+    color: black !important;
+} */
+
+.cuenta_carrito{
+    display: flex;
+    justify-content: end !important;
+}
