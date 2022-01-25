@@ -1,0 +1,51 @@
+.contenedorNavbar{
+    padding-top:15px;
+    background-color: #F3F9FB;
+    
+}
+
+.categorias{
+    color: #113F67 !important;
+}
+
+.fondoCarrito{
+    background-color: rgb(241, 235, 226) !important;
+    border-radius: 10px;
+    border: 1px solid black;
+    justify-content: end !important;
+}
+
+.barraTotal{
+    justify-content: space-between;
+}
+
+.logo{
+    height: 40px;
+    width: 250px;
+}
+
+.miCuenta{
+    text-decoration: none;
+    color: #113F67 !important;
+    font-size: 20px;
+
+}
+
+.carrito{
+    font-size: 30px;
+    color: #113F67;
+}
+
+.buscar{
+    border-radius: 10px;
+    background-color: #87C0CD;
+    border: 2px solid#226597;
+    color: #226597;
+    height: 60%;
+}
+
+.buscador{
+    border: 1px solid ;
+    width: 400px;
+    height: 60%;
+}
