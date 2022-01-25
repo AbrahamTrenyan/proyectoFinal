@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* .carrito{
     font-size: 20px;
 }
@@ -36,4 +37,19 @@
 .cuenta_carrito{
     display: flex;
     justify-content: end !important;
+=======
+.fondo-header{
+    height: 600px;
+    background-image: url('../../assets/img/header.jpg');
+    background-repeat: no-repeat;  
+    background-position: 0% 0%;
+    background-size: 100% 110%;
+    display: flex;
+}
+/* .title{
+
+} */
+.btn-contact{
+    height: max-content;
+>>>>>>> eb55db3e931c0d3c1d403852fe05b3557f86b2b7
 }

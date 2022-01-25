@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./Header.css"
 
 
@@ -80,6 +81,16 @@ const Header = () => {
                 </div>
             </nav> */}
         </>
+=======
+import './Header.css'
+const Header = () => {
+    return ( 
+        <div className="fondo-header">
+            <h1 className='title'>Electro Argentina</h1>
+            <p className='slogan'>Encontrá ése accesorio que estabas buscando, al mejor precio.</p>
+            <button className='btn-contact'>Contactanos</button>
+        </div>
+>>>>>>> eb55db3e931c0d3c1d403852fe05b3557f86b2b7
      );
 }
  
