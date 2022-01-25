@@ -1,20 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
 .container-header{
     height: 600px;
     background-image: url('../../assets/img/header.jpg');
     background-repeat: no-repeat;  
     background-position: 0% 0%;
-    background-size: 100% 110%;
-    display: flex;
+    background-size: 100% 100%;
+    display: block;
     text-align: center;
 }
 .title{
     color: white;
-} 
-.btn-contact{
-    max-width: max-content;
-    max-height  : max-content;
+    padding-top: 4%;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 4rem;
+} 
+.slogan{
+    margin-top: 20%;
+    margin-bottom: 2%;
+    color:white
+}
+.btn-contact{
+    padding-right:1%;
+    padding-left: 1%;
+    height: 48px; 
+    font-size: 2rem;
     color: white;
     background-color: transparent;
-    border: 1px solid red;
+    border: 1px solid white;
+    border-radius: 6px;
+    position: bottom;
+}
+.btn-contact:hover{
+    color: brown;
+    border: 1px solid brown;
 }
