@@ -1,22 +1,25 @@
 import "./Navbar.css"
 import logo from "../../assets/img/logoTransparente.png"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return ( 
         <div className="contenedorNavbar d-flex justify-content-between">
             <div className="logo">
-                <img src={logo} alt="Electro-Argenitna" className="logo"/>
+                <Link to="/">
+                    <img src={logo} alt="Electro-Argenitna" className="logo"/>
+                </Link>
             </div>
             <div className="formulario d-flex">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle fw-bold categorias ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <Link className="nav-link dropdown-toggle fw-bold categorias ms-4" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
-                        </a>
+                        </Link>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="#">Laptops</a></li>
-                            <li><a className="dropdown-item" href="#">Smartwatches</a></li>
-                            <li><a className="dropdown-item" href="#">Audio</a></li>
+                            <li><Link className="dropdown-item" to="/laptops">Laptops</Link></li>
+                            <li><Link className="dropdown-item" to="/smartwatches">Smartwatches</Link></li>
+                            <li><Link className="dropdown-item" to="/audio">Audio</Link></li>
                         </ul>
                     </li>
                 </ul>
