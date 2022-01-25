@@ -1,0 +1,20 @@
+.container-header{
+    height: 600px;
+    background-image: url('../../assets/img/header.jpg');
+    background-repeat: no-repeat;  
+    background-position: 0% 0%;
+    background-size: 100% 110%;
+    display: flex;
+    text-align: center;
+}
+.title{
+    color: white;
+} 
+.btn-contact{
+    max-width: max-content;
+    max-height  : max-content;
+    font-size: 4rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid red;
+}
