@@ -6,6 +6,7 @@ const Header = () => {
             <p className='slogan'>Encontrá ése dispositivo que estabas buscando, al mejor precio.</p>
             <button className='btn-contact'>Contactanos</button>
         </div>
+
      );
 }
  
