@@ -1,3 +1,14 @@
 .fondo-header{
-    background-image: url('../../assets/img/fondoHeader.jpg');
+    height: 600px;
+    background-image: url('../../assets/img/header.jpg');
+    background-repeat: no-repeat;  
+    background-position: 0% 0%;
+    background-size: 100% 110%;
+    display: flex;
+}
+/* .title{
+
+} */
+.btn-contact{
+    height: max-content;
 }
