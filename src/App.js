@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-          Edit <code>src/App.js</code> Rama estuvo aqui
+          Edit <code>src/App.js</code> Rama estuvo aqui otra vez.
         </p>
         <a
           className="App-link"
