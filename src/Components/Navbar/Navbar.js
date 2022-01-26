@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="formulario d-flex">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle fw-bold categorias ms-4" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <Link className="nav-link dropdown-toggle fw-bold categorias" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
                         </Link>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -23,7 +23,7 @@ const Navbar = () => {
                         </ul>
                     </li>
                 </ul>
-                <input className="form-control ms-4 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"/>
+                <input className="form-control ms-3 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"/>
                 <button className="buscar" type="submit" >Buscar</button>
                     
             </div>

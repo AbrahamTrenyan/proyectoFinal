@@ -34,18 +34,23 @@
 .carrito{
     font-size: 30px;
     color: #113F67;
+    display: inline;
 }
 
 .buscar{
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #87C0CD;
     border: 2px solid#226597;
     color: #226597;
     height: 60%;
+    width: 150px;
+    font-size: 1.3rem;
 }
 
 .buscador{
     border: 1px solid ;
-    width: 400px;
     height: 60%;
+}
+.formulario{
+    margin: 0 !important;
 }
