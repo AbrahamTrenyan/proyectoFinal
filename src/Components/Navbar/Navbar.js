@@ -2,15 +2,15 @@ import "./Navbar.css"
 import logo from "../../assets/img/logoTransparente.png"
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar2 = () => {
     return ( 
-        <div className="contenedorNavbar d-flex justify-content-between">
-            <div className="logo">
+        <div className="row barraNavegacion">
+            <div className="col-3">
                 <Link to="/">
                     <img src={logo} alt="Electro-Argenitna" className="logo"/>
                 </Link>
             </div>
-            <div className="formulario d-flex">
+            <div className="col-6 d-flex">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item dropdown">
                         <Link className="nav-link dropdown-toggle fw-bold categorias ms-4" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -24,15 +24,15 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <input className="form-control ms-4 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"/>
-                <button className="buscar" type="submit" >Buscar</button>
+                <button className="buscar fw-bold" type="submit" >Buscar</button>
                     
             </div>
-            <div className="d-flex">
-                <Link to="/account" className="miCuenta d-flex mt-1">
-                    <i class="bi bi-person-circle "></i>
-                    <p className="ms-2 ">Mi cuenta</p>
+            <div className=" persona col-3 d-flex justify-content-end align-items-center">
+                <Link to="/account" className="mt-1 miCuenta d-flex">
+                    <i class="bi bi-person-circle d-flex"></i>
+                    <p className="ms-2">Mi cuenta</p>
                 </Link>
-                <a className="nav-link d-flex" href="#">
+                <a className="nav-link d-flex align-items-center" href="#">
                     <i className="bi bi-cart4 carrito"></i>
                     <p className="">1</p>
                 </a>
@@ -127,4 +127,4 @@ const Navbar = () => {
      );
 }
  
-export default Navbar;
+export default Navbar2;

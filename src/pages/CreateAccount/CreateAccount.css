@@ -24,6 +24,11 @@
 }
 
 .mensajeLogIn{
-text-decoration: none;
+    text-decoration: none;
 
+}
+
+.inputUser, .inputEmail, .inputPassword{
+    border-radius: 10px !important;
+    border: 3px solid var(--background-sections) !important;
 }

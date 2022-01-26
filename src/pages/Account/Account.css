@@ -1,5 +1,5 @@
 .boton{
-    background-color: #226597 !important;
+    background-color: var( --background-cards) !important;
     color: white !important;
 }
 
@@ -27,3 +27,10 @@
     color: var(--background-cards);
 }
 
+.tituloEmail, .tituloContraseña{
+    color: var(--color-letters);
+}
+
+.mensajeSignUp{
+    text-decoration: none;
+}
