@@ -1,8 +1,7 @@
 .barraNavegacion{
-    margin-top: 20px !important;
     background-color: var(--background-pages);
     padding-top: 20px;
-
+    margin-right: 0 !important;
 }
 
 .buscador{
