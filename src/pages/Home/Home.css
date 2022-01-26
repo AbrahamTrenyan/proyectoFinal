@@ -1,3 +1,5 @@
+/* Seccion "Categorias" */
+
 .card-categorias {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -16,3 +18,14 @@
     border: solid var(--background-cards) 3px;
 }
 
+/* Seccion "Ofertas" */
+
+.seccion-ofertas {
+    background-color: var(--background-sections);
+}   
+
+/* Seccion "Info" */
+
+.iconito {
+    font-size: 70px;
+}

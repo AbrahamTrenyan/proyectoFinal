@@ -4,35 +4,64 @@ import imgLaptop from '../../assets/img/categorias/categoria-laptops.jpg'
 import imgSmartwatches from '../../assets/img/categorias/categoria-smartwatchesjpg (1).jpg'
 import imgAudio from '../../assets/img/categorias/categoria-audio.jpg'
 import { Link } from 'react-router-dom'
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Home = () => {
     return (    
-    <>
+    <>  
+        
         <Header />
-
-        <section id="seccion-categorias" className="card-categorias container d-flex justify-content-evenly flex-wrap">
-            <div className="card border-none mt-3" style={{width: '18rem'}}>
-                <img src={imgLaptop} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                <div className="card-body text-center mt-3">
-                    <h5 className="card-title">Laptops</h5>
-                    <p className="card-text text-muted">Apple - Hp - Lenovo</p>
+        <main>
+            <section id="seccion-categorias" className="card-categorias container d-flex justify-content-evenly flex-wrap">
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <img src={imgLaptop} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
+                    <div className="card-body text-center mt-3">
+                        <h5 className="card-title">Laptops</h5>
+                        <p className="card-text text-muted">Apple - Hp - Lenovo</p>
+                    </div>
                 </div>
-            </div>
-            <div className="card border-none mt-3" style={{width: '18rem'}}>
-                <img src={imgSmartwatches} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                <div className="card-body text-center mt-3">
-                    <h5 className="card-title">Smartwatches</h5>
-                    <p className="card-text text-muted">Samsung - Apple - Xiaomi</p>
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <img src={imgSmartwatches} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
+                    <div className="card-body text-center mt-3">
+                        <h5 className="card-title">Smartwatches</h5>
+                        <p className="card-text text-muted">Samsung - Apple - Xiaomi</p>
+                    </div>
                 </div>
-            </div>
-            <div className="card border-none mt-3" style={{width: '18rem'}}>
-                <img src={imgAudio} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                <div className="card-body text-center mt-3">
-                    <h5 className="card-title">Audio</h5>
-                    <p className="card-text text-muted">JBL - Xiaomi - Philco</p>
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <img src={imgAudio} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
+                    <div className="card-body text-center mt-3">
+                        <h5 className="card-title">Audio</h5>
+                        <p className="card-text text-muted">JBL - Xiaomi - Philco</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="seccion-ofertas" className="seccion-ofertas">
+                <h2 className="text-center mt-3">Aprovecha nuestras ultimas ofertas!</h2>
+            </section>
+            <section id="seccion-info" className="d-flex justify-content-evenly flex-wrap">
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <i className="bi bi-truck text-center p-2 iconito"></i>
+                    <div className="card-body text-center ">
+                        <h5 className="card-title">Envio Gratis</h5>
+                        <p className="card-text text-muted">Todos nuestros productos cuentan con envío 100% gratis por Correo Argentino y Moto Mensajería a todo el país.</p>
+                    </div>
+                </div>
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <i class="bi bi-patch-check text-center iconito"></i>
+                    <div className="card-body text-center ">
+                        <h5 className="card-title">Garantia</h5>
+                        <p className="card-text text-muted">En caso de querer o necesitar cambiar un producto, el costo del envío por cambio corre por cuenta del cliente(salvo por fallas en el producto), y se efectúa siempre y cuando el producto devuelto se encuentre en su empaque original, sin usar, y con todos sus accesorios.</p>
+                    </div>
+                </div>
+                <div className="card border-none mt-3" style={{width: '18rem'}}>
+                    <i class="bi bi-credit-card-2-front text-center iconito"></i>
+                    <div className="card-body text-center ">
+                        <h5 className="card-title">Medios de Pago</h5>
+                        <p className="card-text text-muted">Aceptamos TODOS los métodos de pago, desde MercadoPago, incluyendo todas las tarjetas de crédito y débito, transferencia, y efectivo en Rapipago o Pago Fácil.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </>
     );
 }
