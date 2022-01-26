@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar/Navbar';
 import Account from './pages/Account/Account';
+import CreateAccount from './pages/CreateAccount/CreateAccount';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
           <Route path='/smartwatches' element={<Home />}/>
           <Route path='/audio' element={<Home />}/>
           <Route path='/account' element={<Account />}/>
+          <Route path='/createaccount' element={<CreateAccount />}/>
+
         </Routes>
         <Footer />
       </Router> 
