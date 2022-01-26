@@ -13,7 +13,7 @@ const Navbar2 = () => {
             <div className="col-6 d-flex">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle fw-bold categorias ms-4" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <Link className="nav-link dropdown-toggle fw-bold categorias" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
                         </Link>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
