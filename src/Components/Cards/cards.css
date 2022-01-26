@@ -1,0 +1,22 @@
+.precio{
+    font-size: 25px;
+}
+
+.boton{
+    background-color: #226597 !important;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+   
+}
+
+.card{
+    border-radius: 20px !important;
+    border: 2px solid  var(--background-cards) !important;
+}
+
+.imagenProducto{
+    border-top-left-radius:20px !important ;
+    border-top-right-radius:20px !important ;
+
+}
