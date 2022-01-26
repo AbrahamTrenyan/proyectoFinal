@@ -28,10 +28,10 @@ const Navbar = () => {
                     
             </div>
             <div className="d-flex">
-                <a className="miCuenta d-flex mt-1">
+                <Link to="/account" className="miCuenta d-flex mt-1">
                     <i class="bi bi-person-circle "></i>
                     <p className="ms-2 ">Mi cuenta</p>
-                </a>
+                </Link>
                 <a className="nav-link d-flex" href="#">
                     <i className="bi bi-cart4 carrito"></i>
                     <p className="">1</p>

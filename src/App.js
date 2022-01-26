@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Navbar from './Components/Navbar/Navbar';
+import Account from './pages/Account/Account';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path='/laptops' element={<Home />}/>
           <Route path='/smartwatches' element={<Home />}/>
           <Route path='/audio' element={<Home />}/>
+          <Route path='/account' element={<Account />}/>
         </Routes>
       </Router> 
     </>

@@ -1,0 +1,15 @@
+.boton{
+    background-color: #226597 !important;
+    color: white !important;
+}
+
+.contenedorFormulario{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.formulario{
+    margin-left: 2%;
+
+}
