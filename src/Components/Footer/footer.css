@@ -1,0 +1,17 @@
+.footer-container{
+    font-size: 1.3rem;
+    color: var(--color-letters);
+    background-color: var(--background-pages);
+    padding-bottom: 10px;
+}
+.footer-text{
+    padding-top: 15px;
+}
+.social-media{
+    font-size: 2rem;
+    margin-right: 0 !important; 
+}
+.color-item{
+     color: var(--color-letters);
+     margin-right: 80px;
+}

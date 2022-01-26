@@ -1,0 +1,36 @@
+.boton{
+    background-color: var( --background-cards) !important;
+    color: white !important;
+}
+
+.contenedorFormulario{
+    border: 3px solid var(--background-cards);
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 1%;
+    border-radius: 10px;
+    background-color: var(--background-sections);
+    box-shadow: 7px 0px 15px var(--color-letters);
+
+}
+
+.formulario{
+    margin: 2%;
+}
+
+.doorIcon{
+    margin-top: 3%;
+    font-size: 70px;
+    color: var(--background-cards);
+}
+
+.tituloEmail, .tituloContraseña{
+    color: var(--color-letters);
+}
+
+.mensajeSignUp{
+    text-decoration: none;
+}

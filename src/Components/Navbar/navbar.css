@@ -1,51 +1,41 @@
-.contenedorNavbar{
-    padding-top:15px;
-    background-color: #F3F9FB;
-    
-}
-
-.categorias{
-    color: #113F67 !important;
-}
-
-.fondoCarrito{
-    background-color: rgb(241, 235, 226) !important;
-    border-radius: 10px;
-    border: 1px solid black;
-    justify-content: end !important;
-}
-
-.barraTotal{
-    justify-content: space-between;
-}
-
-.logo{
-    height: 40px;
-    width: 250px;
-}
-
-.miCuenta{
-    text-decoration: none;
-    color: #113F67 !important;
-    font-size: 20px;
+.barraNavegacion{
+    margin-top: 20px !important;
+    background-color: var(--background-pages);
+    padding-top: 20px;
 
 }
 
-.carrito{
-    font-size: 30px;
-    color: #113F67;
+.buscador{
+    border: 2px solid var(--color-letters) !important;
+    width: 400px;
+    height: 60%;
+    border-radius:15px !important;
 }
 
 .buscar{
     border-radius: 10px;
-    background-color: #87C0CD;
-    border: 2px solid#226597;
-    color: #226597;
+    background-color:var( --background-sections);
+    border: 2px solid var(--background-cards);
+    color: var(--background-cards);
     height: 60%;
+    width: 20%;
 }
 
-.buscador{
-    border: 1px solid ;
-    width: 400px;
-    height: 60%;
+.miCuenta{
+    text-decoration: none;
+    color: var(--color-letters) !important;
+    font-size: 20px;
+
+}
+.persona{
+    float: left;
+}
+
+.carrito{
+    font-size: 30px;
+    color:var(--color-letters) ;
+}
+
+.categorias{
+    color: #113F67 !important;
 }
