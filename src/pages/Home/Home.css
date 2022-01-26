@@ -1,0 +1,18 @@
+.card-categorias {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.border-color {
+    border-color: var(--background-cards);
+}
+
+.h-cards {
+    height: 175px;
+}
+
+.card:hover {
+    border: solid var(--background-cards) 3px;
+}
+
