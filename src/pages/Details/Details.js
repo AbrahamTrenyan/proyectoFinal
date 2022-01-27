@@ -1,22 +1,23 @@
 import { useParams } from "react-router-dom";
-import "./Details.css"
-import ProductDetail from "../../Components/ProductDetail";
+// import "./Details.css"
+// import ProductDetail from "../../Components/ProductDetail";
+
+import { useState } from "react";
+import ProductDetail from "../../Components/ProductDetail/ProductDetail";
 
 
 
 const Details = () => {
+    // const[detalleProducto, setDetalleProducto] = useState({})
     const{id} = useParams()
-    let productoUnitario = productoUnitario.filter(unidad => unidad.id ===unidad.id)
+
+    // const getDetalleProducto = (id) =>{
+    //     setDetalleProducto(id)
+    // }
+    // let productoUnitario = productoUnitario.filter(unidad => unidad.id ===unidad.id)
     return (    
         <>  
-             <div className="d-flex flex-wrap justify-content-around m-3">
-               
-                    {productoUnitario.map(product => (
-                        <ProductDetail key={product.id} {...product} />
-                     ))
-                    }
-           
-        </div>
+             <ProductDetail  id={id}/>
             
         </>
     );
