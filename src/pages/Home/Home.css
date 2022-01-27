@@ -33,9 +33,17 @@
 .linkTituloCategoria{
     text-decoration: none;
 }
+.img-contacto{
+    width: 80%;
+    height: 45%;
+}
+.boton{
+    color: var(--color-letters);
+    width: 150px !important;
+    margin-top: 5%;
+}
 
 .imagenCategoria{
-    border-top-left-radius: 19px !important;
-    border-top-right-radius: 19px !important;
-
+    border-top-left-radius:20px !important ;
+    border-top-right-radius:20px !important ;
 }
