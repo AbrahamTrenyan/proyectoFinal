@@ -10,9 +10,7 @@ import Laptops from './pages/Laptops/Laptops';
 import Audio from './pages/Audio/Audio';
 import Smartwatches from './pages/Smartwatches/Smartwatches';
 import Details from './pages/Details/Details';
-
-
-
+import Busqueda from './pages/Busqueda/Busqueda'
 
 function App() {
   return (
@@ -28,6 +26,7 @@ function App() {
             <Route path='/account' element={<Account />} />
             <Route path='/createaccount' element={<CreateAccount />} />
             <Route path="/:id" element={<Details />} />
+            <Route path="/busqueda" element={<Busqueda />} />
           </Routes>
           <Footer />
         </Router>

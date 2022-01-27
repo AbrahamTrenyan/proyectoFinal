@@ -1,8 +1,14 @@
 import "./Navbar.css"
 import logo from "../../assets/img/logoTransparente.png"
 import { Link } from "react-router-dom";
+import { Context } from "../../store/storeContext";
+import { useContext } from "react";
 
-const Navbar2 = () => {
+const Navbar = () => {
+    const {busqueda, setBusqueda} = useContext(Context)
+    const buscar = (e) =>{
+        setBusqueda(e)
+    }
     return ( 
         <div className="row barraNavegacion">
             <div className="col-3">
@@ -24,7 +30,7 @@ const Navbar2 = () => {
                     </li>
                 </ul>
                 <input className="form-control ms-4 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"/>
-                <button className="buscar fw-bold" type="submit" >Buscar</button>
+                <Link to='/busqueda'><button className="buscar fw-bold" type="submit" onSubmit={(e => buscar(e.target.value))}>Buscar</button></Link>
                     
             </div>
             <div className=" persona col-3 d-flex justify-content-end align-items-center">
@@ -37,8 +43,6 @@ const Navbar2 = () => {
                     <p className="">1</p>
                 </a>
             </div>
-
-
         </div>
 
 
@@ -127,4 +131,4 @@ const Navbar2 = () => {
      );
 }
  
-export default Navbar2;
+export default Navbar;

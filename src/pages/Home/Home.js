@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../Components/Navbar/Navbar';
 import Ofertas4 from '../../Components/Ofertas'
 import Ofertas from '../../Components/Ofertas'
+import contacto from '../../assets/img/categorias/contacto.jpg'
 const Home = () => {
     return (    
     <>  
@@ -74,21 +75,22 @@ const Home = () => {
             <section id="seccion-nosotros/contacto" className="seccion-ofertas">
                 <div className="row ">
                     <div className="col-md-6 col-sm-12 d-flex flex-wrap justify-content-center align-items-center text-center">
-                        <h2 className="pt-5">Sobre nosotros</h2>
-                        <p className="px-5">Somos dos socios en un emprendimiento con un objetivo muy claro: conseguir los accesorios más demandados del mercado y distribuirlos al mejor precio, por mayor y por menor. 
+                        <h2 className="pt-5 mb-4">Sobre nosotros</h2>
+                        <img src={contacto} className='img-contacto mb-4'/>
+                        <p className="px-5 mb-4">Somos dos socios en un emprendimiento con un objetivo muy claro: conseguir los accesorios más demandados del mercado y distribuirlos al mejor precio, por mayor y por menor. 
                             Nuestros valores, la transparencia, compromiso, y amabilidad con nuestros clientes.
                             Nuestra visión: competir, crecer, y estar a la altura de las demandas del mercado actual.
                         </p>
                     </div>
                     <div className="col-md-6 col-sm-12 text-start p-5">
                         <div className="text-center">
-                            <h2>Contactanos</h2>
-                            <h3>Ante cualquier duda no dude en consultar</h3>
+                            <h2 className='mt-4'>Contactanos</h2>
+                            <h3 className='mt-3'>Ante cualquier duda no dude en consultar</h3>
                         </div>
                         <form action="https://submit-form.com/VoG37Uu9" className="w-75 d-inline">
                             <div className="mb-3">
                                 <label for="name" className="form-label">Nombre</label>
-                                <input type="text" name="name" className="form-control" id="name" />
+                                <input type="text" pattern="[A-Za-z]"name="name" className="form-control" id="name" />
                             </div>
                             <div className="mb-3">
                                 <label for="email" className="form-label">Email</label>
@@ -98,7 +100,9 @@ const Home = () => {
                                 <label for="comentarios" className="form-label">Dejanos alguna pregunta o comentario</label>
                                 <textarea className="form-control" name="comentarios" rows="5" cols="10" placeholder="Comentario" id="comentarios" ></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary">Submit</button>
+                            <div className='d-flex justify-content-center'>
+                            <button type="submit" className="boton">Enviar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
