@@ -42,6 +42,11 @@ export const Context = createContext(null)
 const UserProvider = ({children}) => {
     const [busqueda, setBusqueda] = useState("")
     const [buscados, setBuscados] =useState([])
+    const [carrito, setCarrito] = useState([])
+    const handleChange = (e) =>{
+        e.preventDefault()
+        setBusqueda(e.target.value)
+    }
     const [productsList, setProductsList] = useState([{
         id: 1,
         nombre: "Notebook Exo Smart XL4-H3548 gris 15.6",
@@ -252,7 +257,7 @@ const UserProvider = ({children}) => {
     }
 ])
 return (
-    <Context.Provider value ={{productsList,setProductsList, busqueda, setBusqueda, buscados, setBuscados}}>
+    <Context.Provider value ={{productsList,setProductsList, busqueda, setBusqueda, buscados, setBuscados, handleChange, carrito, setCarrito}}>
         {children}
     </Context.Provider>
 )
