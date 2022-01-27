@@ -4,7 +4,7 @@ const Header = () => {
         <div className="container-header">
             <h1 className='title'>Electro Argentina</h1>
             <p className='slogan'>Encontrá ése dispositivo que estabas buscando, al mejor precio.</p>
-            <button className='btn-contact'>Contactános</button>
+            <a href="#seccion-nosotros/contacto" className='button-style btn1'>Contactános</a>
         </div>
      );
 }

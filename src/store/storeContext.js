@@ -1,4 +1,4 @@
-import {createContext, useState } from 'react';
+import {createContext, useEffect, useState } from 'react';
 import producto1 from '../assets/img/productos/producto1.jpg'
 import producto1b from '../assets/img/productos/producto1b.jpg'
 import producto2 from '../assets/img/productos/producto2.jpg'
@@ -40,6 +40,9 @@ import producto19b from '../assets/img/productos/producto19b.jpg'
 
 export const Context = createContext(null)
 const UserProvider = ({children}) => {
+
+    const [usuario, setUsuario] = useState('Mi cuenta');
+
     const [busqueda, setBusqueda] = useState("")
     const [buscados, setBuscados] =useState([])
     const [carrito, setCarrito] = useState([])
@@ -257,7 +260,7 @@ const UserProvider = ({children}) => {
     }
 ])
 return (
-    <Context.Provider value ={{productsList,setProductsList, busqueda, setBusqueda, buscados, setBuscados, handleChange, carrito, setCarrito}}>
+    <Context.Provider value ={{productsList,setProductsList, busqueda, usuario, setUsuario, setBusqueda, buscados, setBuscados, handleChange, carrito, setCarrito}}>
         {children}
     </Context.Provider>
 )

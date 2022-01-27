@@ -1,11 +1,16 @@
 import "./Navbar.css"
 import logo from "../../assets/img/logoTransparente.png"
 import { Link } from "react-router-dom";
-import { Context } from "../../store/storeContext";
+import Login from "../Login";
+import Logout from "../Logout";
+import Account from "../../pages/Account/Account";
+import { useAuth0 } from "@auth0/auth0-react";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { useNavigate } from 'react-router';
-
+import { Context } from "../../store/storeContext";
 const Navbar = () => {
+
+    const {isAuthenticated} = useAuth0()
     let navigate = useNavigate();
     const { busqueda, handleChange, carrito } = useContext(Context)
     const handleSubmit = () => {
@@ -13,6 +18,7 @@ const Navbar = () => {
     }
     return (
         <div className="row barraNavegacion">
+        <div className="d-flex  justify-content-around barraNavegacion">
             <div className="col-3">
                 <Link to="/">
                     <img src={logo} alt="Electro-Argenitna" className="logo" />
@@ -37,17 +43,32 @@ const Navbar = () => {
                 </form>
 
             </div>
+<<<<<<< HEAD
             <div className=" persona col-3 d-flex justify-content-end align-items-center">
                 <Link to="/account" className="mt-1 miCuenta d-flex">
                     <i class="bi bi-person-circle d-flex"></i>
                     <p className="ms-2">Mi cuenta</p>
                 </Link>
                 <Link className="nav-link d-flex align-items-center" to="/carrito">
+=======
+            <div className=" persona col-3 d-flex justify-content-end align-items-center text-center">
+                { isAuthenticated ?
+                    <>
+                        <Account />
+                        <Logout />
+                    </>
+                    :
+                        <Login />
+                    }
+                
+                <a className="nav-link d-flex justify-content-center align-items-center" href="#">
+>>>>>>> ab86ee2ade1a71af51b2f391f21b6fd62a227be9
                     <i className="bi bi-cart4 carrito"></i>
                     <p className="">{carrito.length}</p>
                 </Link>
             </div>
         </div>
+<<<<<<< HEAD
 
 
         // <div className="d-flex barraTotal">  
@@ -136,3 +157,10 @@ const Navbar = () => {
 }
 
 export default Navbar;
+=======
+        
+     );
+}
+ 
+export default Navbar
+>>>>>>> ab86ee2ade1a71af51b2f391f21b6fd62a227be9
