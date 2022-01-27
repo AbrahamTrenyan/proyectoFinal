@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <UserProvider>
-        <Router>
+        <Router  basename ="/https://github.com/AbrahamTrenyan/proyectoFinal">
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
