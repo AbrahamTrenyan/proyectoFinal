@@ -6,7 +6,7 @@
 
 .buscador{
     border: 2px solid var(--color-letters) !important;
-    width: 400px;
+    width: 100px;
     height: 60%;
     border-radius:15px !important;
 }

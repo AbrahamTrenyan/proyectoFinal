@@ -31,8 +31,8 @@ const Navbar = () => {
                         </ul>
                     </li>
                 </ul>
-                <form onSubmit={handleSubmit}>
-                <input className="form-control ms-4 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"  onChange={(e) => handleChange(e)}/>
+                <form onSubmit={handleSubmit} className="d-flex">
+                    <input className="form-control ms-4 me-2 buscador" type="search" placeholder="Busque un producto" aria-label="Search"  onChange={(e) => handleChange(e)}/>
                 <Link to='/busqueda'><button className="buscar fw-bold" type="submit" value={busqueda} >Buscar</button></Link>
                 </form>
                     
