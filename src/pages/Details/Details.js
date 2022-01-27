@@ -8,20 +8,12 @@ import { Context } from "../../store/storeContext";
 
 const Details = () => {
     const{id} = useParams()
-    console.log(useParams)
-
-    const { productsList } = useContext(Context)
-    console.log(productsList)
-
-    
-
-
+  const { productsList, carrito, setCarrito } = useContext(Context)
   const elemento = productsList.filter(producto=> producto.id ==id)
-  console.log(elemento)
-    // const getDetalleProducto = (id) =>{
-    //     setProductoDetallado(id)
-    // }
-    // let productoUnitario = productoUnitario.filter(unidad => unidad.id ===unidad.id)
+  const agregar = (prod) => {
+    setCarrito(...carrito, prod)
+    console.log(carrito)
+  } 
     return (    
         <>  
             {elemento!== null ?
@@ -58,7 +50,7 @@ const Details = () => {
                                 <div className="d-flex justify-content-evenly">
                                 <p className="card-text precio fw-bold text-center">${elemento[0].precio}</p>
                             
-                                    <button className="botonAgregar fw-bold ">Agregar a mi carrito</button>
+                                    <button className="botonAgregar fw-bold " onClick={agregar(elemento[0])}>Agregar a mi carrito</button>
                                 </div>
                             </div>
                             
