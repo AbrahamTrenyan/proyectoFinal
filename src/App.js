@@ -11,7 +11,10 @@ import Audio from './pages/Audio/Audio';
 import Smartwatches from './pages/Smartwatches/Smartwatches';
 import Details from './pages/Details/Details';
 import Busqueda from './pages/Busqueda/Busqueda'
-
+import Cart from './pages/Cart'
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 function App() {
   return (
     <>
@@ -27,6 +30,7 @@ function App() {
             <Route path='/createaccount' element={<CreateAccount />} />
             <Route path="/:id" element={<Details />} />
             <Route path="/busqueda" element={<Busqueda />} />
+            <Route path="/carrito" element={<Cart />} />
           </Routes>
           <Footer />
         </Router>

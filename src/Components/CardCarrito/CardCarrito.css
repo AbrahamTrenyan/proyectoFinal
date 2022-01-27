@@ -1,0 +1,46 @@
+.precio{
+    font-size: 25px;
+}
+
+.boton{
+    background-color: var( --background-cards) !important;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.card{
+    border-radius: 20px !important;
+    border: 2px solid  var(--background-cards) !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+}
+
+.imagenProducto{
+    border-top-left-radius:20px !important ;
+    border-top-right-radius:20px !important ;
+    max-height: 200px !important;
+}
+
+.contenedorImagenCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorImagenCard img {
+    max-width: 95%;
+}
+
+.tituloProducto {
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    /*ellipsis*/
+}
