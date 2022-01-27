@@ -5,6 +5,7 @@ import Footer from './Components/Footer'
 import Account from './pages/Account/Account';
 import CreateAccount from './pages/CreateAccount/CreateAccount';
 import Navbar from './Components/Navbar/Navbar';
+import Details from './pages/Details/Details';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
+        <Details />
+         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/laptops' element={<Home />}/>
           <Route path='/smartwatches' element={<Home />}/>
