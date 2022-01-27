@@ -6,6 +6,11 @@ import Account from './pages/Account/Account';
 import CreateAccount from './pages/CreateAccount/CreateAccount';
 import Navbar from './Components/Navbar/Navbar';
 import UserProvider from './store/storeContext';
+import Laptops from './pages/Laptops/Laptops';
+import Audio from './pages/Audio/Audio';
+import Smartwatches from './pages/Smartwatches/Smartwatches';
+
+
 
 
 function App() {
@@ -16,9 +21,9 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/laptops' element={<Home />} />
-            <Route path='/smartwatches' element={<Home />} />
-            <Route path='/audio' element={<Home />} />
+            <Route path='/laptops' element={<Laptops />} />
+            <Route path='/smartwatches' element={<Smartwatches />} />
+            <Route path='/audio' element={<Audio />} />
             <Route path='/account' element={<Account />} />
             <Route path='/createaccount' element={<CreateAccount />} />
           </Routes>
