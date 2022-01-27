@@ -9,6 +9,7 @@ import UserProvider from './store/storeContext';
 import Laptops from './pages/Laptops/Laptops';
 import Audio from './pages/Audio/Audio';
 import Smartwatches from './pages/Smartwatches/Smartwatches';
+import Details from './pages/Details/Details';
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/audio' element={<Audio />} />
             <Route path='/account' element={<Account />} />
             <Route path='/createaccount' element={<CreateAccount />} />
+            <Route path="/:id" element={<Details />} />
           </Routes>
           <Footer />
         </Router>

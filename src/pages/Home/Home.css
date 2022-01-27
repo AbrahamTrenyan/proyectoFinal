@@ -33,3 +33,9 @@
 .linkTituloCategoria{
     text-decoration: none;
 }
+
+.imagenCategoria{
+    border-top-left-radius: 19px !important;
+    border-top-right-radius: 19px !important;
+
+}

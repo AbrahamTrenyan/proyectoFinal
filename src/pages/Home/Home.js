@@ -13,33 +13,32 @@ const Home = () => {
         <Header />
         <main>
             <section id="seccion-categorias" className="card-categorias container d-flex justify-content-evenly flex-wrap">
-                <Link to="/laptops">
-                <div className="card border-none mt-3" style={{width: '18rem'}}>
-                    <img src={imgLaptop} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                    <div className="card-body text-center mt-3">
-                        <h5 className="card-title">Laptops</h5>
-                        <p className="card-text text-muted">Apple - Hp - Lenovo</p>
+                <Link to="/laptops" className='linkTituloCategoria'>
+                    <div className="card border-none mt-3" style={{width: '18rem'}}>
+                        <img src={imgLaptop} className="card-img-top h-cards border-3 border-color imagenCategoria" alt="Imagen de una laptop" />
+                        <div className="card-body text-center mt-3">
+                            <h5 className="card-title">Laptops</h5>
+                            <p className="card-text text-muted">Apple - Hp - Lenovo</p>
+                        </div>
                     </div>
-                </div>
                 </Link>
                 <Link to="/smartwatches" className='linkTituloCategoria'>
-                <div className="card border-none mt-3" style={{width: '18rem'}}>
-                    <img src={imgSmartwatches} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                    <div className="card-body text-center mt-3">
-                        <h5 className="card-title ">Smartwatches</h5>
-                        <p className="card-text text-muted ">Samsung - Apple - Xiaomi</p>
+                    <div className="card border-none mt-3" style={{width: '18rem'}}>
+                        <img src={imgSmartwatches} className="card-img-top h-cards border-3 border-color imagenCategoria" alt="Imagen de una laptop" />
+                        <div className="card-body text-center mt-3">
+                            <h5 className="card-title ">Smartwatches</h5>
+                            <p className="card-text text-muted ">Samsung - Apple - Xiaomi</p>
+                        </div> 
                     </div>
-                    
-                </div>
                 </Link>
-                <Link to="/audio">
-                <div className="card border-none mt-3" style={{width: '18rem'}}>
-                    <img src={imgAudio} className="card-img-top h-cards border-3 border-color" alt="Imagen de una laptop" />
-                    <div className="card-body text-center mt-3">
-                        <h5 className="card-title">Audio</h5>
-                        <p className="card-text text-muted">JBL - Xiaomi - Philco</p>
+                <Link to="/audio" className='linkTituloCategoria'>
+                    <div className="card border-none mt-3" style={{width: '18rem'}}>
+                        <img src={imgAudio} className="card-img-top h-cards border-3 border-color imagenCategoria" alt="Imagen de una laptop" />
+                        <div className="card-body text-center mt-3">
+                            <h5 className="card-title">Audio</h5>
+                            <p className="card-text text-muted">JBL - Xiaomi - Philco</p>
+                        </div>
                     </div>
-                </div>
                 </Link>
             </section>
 

@@ -38,5 +38,7 @@
     height: 80px;
     text-align: center;
     overflow: hidden;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
     /*ellipsis*/
 }

@@ -9,7 +9,7 @@ const Cards = () => {
             <div className="card-body">
                 <p className="card-text precio">$110.000</p>
                 <h5 className="card-title producto text-center">Lenovo Thinkpad 8 RAM 256 SSD</h5>
-                <Link to="#" className="btn boton d-flex justify-content-center">Ver producto</Link>
+                <Link to="#" className="btn boton d-flex justify-content-center">Agregar al carrito</Link>
             </div>
         </div>
 

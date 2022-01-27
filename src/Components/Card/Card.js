@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Card.css"
-import logo from "../../assets/img/categorias/categoria-laptops.jpg"
 
 const Card = (props) => {
     const { imagen, precio, nombre } = props
@@ -10,9 +9,9 @@ const Card = (props) => {
                     <img src={imagen} className="imagenProducto" alt={nombre}/>
                 </div>
                 <div className="card-body">
-                    <p className="card-text precio">{precio}</p>
+                    <p className="card-text precio">${precio}</p>
                     <h5 className="card-title tituloProducto ">{nombre}</h5>
-                    <Link to="#" className="btn boton">Agregar al carrito</Link>
+                    <Link to="/details" className="btn boton">Ver producto</Link>
                 </div>
             </div>
        
