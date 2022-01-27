@@ -13,10 +13,10 @@
 .card{
     border-radius: 20px !important;
     border: 2px solid  var(--background-cards) !important;
+    margin-right: 0 !important;
 }
 
 .imagenProducto{
     border-top-left-radius:20px !important ;
     border-top-right-radius:20px !important ;
-
 }
