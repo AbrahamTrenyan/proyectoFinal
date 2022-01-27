@@ -77,7 +77,7 @@ const Home = () => {
                     <div className="col-md-6 col-sm-12 d-flex flex-wrap justify-content-center align-items-center text-center">
                         <h2 className="pt-5 mb-4">Sobre nosotros</h2>
                         <img src={contacto} className='img-contacto mb-4'/>
-                        <p className="px-5 mb-4">Somos dos socios en un emprendimiento con un objetivo muy claro: conseguir los accesorios más demandados del mercado y distribuirlos al mejor precio, por mayor y por menor. 
+                        <p className="px-5 mb-4">Somos tres socios en un emprendimiento con un objetivo muy claro: conseguir los accesorios más demandados del mercado y distribuirlos al mejor precio, por mayor y por menor. 
                             Nuestros valores, la transparencia, compromiso, y amabilidad con nuestros clientes.
                             Nuestra visión: competir, crecer, y estar a la altura de las demandas del mercado actual.
                         </p>

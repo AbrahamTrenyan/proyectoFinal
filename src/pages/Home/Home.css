@@ -42,3 +42,8 @@
     width: 150px !important;
     margin-top: 5%;
 }
+
+.imagenCategoria{
+    border-top-left-radius:20px !important ;
+    border-top-right-radius:20px !important ;
+}
