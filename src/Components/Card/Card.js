@@ -10,7 +10,7 @@ const Card = (props) => {
                 <div className="card-body">
                     <p className="card-text precio">{precio}</p>
                     <h5 className="card-title producto text-center">{nombre}</h5>
-                    <Link to="#" className="btn boton d-flex">Agregar al carrito</Link>
+                    <Link to="#" className="btn boton d-flex ">Agregar al carrito</Link>
                 </div>
             </div>
        
