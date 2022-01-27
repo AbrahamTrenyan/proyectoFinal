@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Card.css"
-
 const Card = (props) => {
     const { imagen, precio, nombre } = props
     return (
@@ -14,7 +13,6 @@ const Card = (props) => {
                     <Link to="/details" className="btn boton">Ver producto</Link>
                 </div>
             </div>
-       
 
     );
 }
