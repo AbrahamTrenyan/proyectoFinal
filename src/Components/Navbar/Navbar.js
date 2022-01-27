@@ -1,10 +1,18 @@
 import "./Navbar.css"
 import logo from "../../assets/img/logoTransparente.png"
 import { Link } from "react-router-dom";
+import Login from "../Login";
+import Logout from "../Logout";
+import Account from "../../pages/Account/Account";
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 const Navbar2 = () => {
+
+    const {isAuthenticated} = useAuth0()
+
     return ( 
-        <div className="row barraNavegacion">
+        <div className="d-flex  justify-content-around barraNavegacion">
             <div className="col-3">
                 <Link to="/">
                     <img src={logo} alt="Electro-Argenitna" className="logo"/>
@@ -27,12 +35,17 @@ const Navbar2 = () => {
                 <button className="buscar fw-bold" type="submit" >Buscar</button>
                     
             </div>
-            <div className=" persona col-3 d-flex justify-content-end align-items-center">
-                <Link to="/account" className="mt-1 miCuenta d-flex">
-                    <i class="bi bi-person-circle d-flex"></i>
-                    <p className="ms-2">Mi cuenta</p>
-                </Link>
-                <a className="nav-link d-flex align-items-center" href="#">
+            <div className=" persona col-3 d-flex justify-content-end align-items-center text-center">
+                { isAuthenticated ?
+                    <>
+                        <Account />
+                        <Logout />
+                    </>
+                    :
+                        <Login />
+                    }
+                
+                <a className="nav-link d-flex justify-content-center align-items-center" href="#">
                     <i className="bi bi-cart4 carrito"></i>
                     <p className="">1</p>
                 </a>

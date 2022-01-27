@@ -1,4 +1,4 @@
-import {createContext, useState } from 'react';
+import {createContext, useEffect, useState } from 'react';
 import producto1 from '../assets/img/productos/producto1.jpg'
 import producto1b from '../assets/img/productos/producto1b.jpg'
 import producto2 from '../assets/img/productos/producto2.jpg'
@@ -40,6 +40,9 @@ import producto19b from '../assets/img/productos/producto19b.jpg'
 
 export const Context = createContext(null)
 const UserProvider = ({children}) => {
+
+    const [usuario, setUsuario] = useState('Mi cuenta');
+
     const [productsList, setProductsList] = useState([{
         id: 1,
         nombre: "Notebook Exo Smart XL4-H3548 gris 15.6",
@@ -250,7 +253,7 @@ const UserProvider = ({children}) => {
     }
 ])
 return (
-    <Context.Provider value ={{productsList}}>
+    <Context.Provider value ={{productsList, usuario, setUsuario}}>
         {children}
     </Context.Provider>
 )
